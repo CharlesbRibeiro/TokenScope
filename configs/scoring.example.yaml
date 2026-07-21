@@ -1,0 +1,11 @@
+# Exemplo de estrutura. A metodologia e o score ainda não estão definidos.
+institutional_readiness:
+  version: draft_v0
+  enabled: false
+  dimensions:
+    - liquidity_activity
+    - structural_robustness
+    - cost_efficiency
+    - operational_quality
+    - information_transparency
+    - institutional_suitability

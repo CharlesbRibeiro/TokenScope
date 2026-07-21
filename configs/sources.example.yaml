@@ -1,0 +1,6 @@
+sources:
+  - source_id: rwa_xyz
+    name: RWA.xyz
+    source_type: market_data
+    base_url: https://app.rwa.xyz
+    enabled: true

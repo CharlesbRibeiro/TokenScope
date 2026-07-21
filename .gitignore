@@ -216,3 +216,35 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# TokenScope DD - local secrets (keep .env.example versioned)
+.env
+.env.*
+!.env.example
+
+# TokenScope DD - local runtime artifacts
+logs/**
+!logs/.gitkeep
+*.log
+*.tmp
+*.temp
+*.bak
+~$*
+Thumbs.db
+Desktop.ini
+
+# Raw and potentially heavy local data (keep directory marker)
+data/raw/**
+!data/raw/.gitkeep
+*.html
+*.htm
+api_responses/
+**/api_responses/**
+
+# Generated runs and reports (keep directory markers)
+outputs/runs/**
+!outputs/runs/.gitkeep
+outputs/reports/**
+!outputs/reports/.gitkeep
+outputs/risk_passports/**
+!outputs/risk_passports/.gitkeep

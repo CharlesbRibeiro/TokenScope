@@ -1,0 +1,1 @@
+"""Structured reporting boundary (reserved)."""
