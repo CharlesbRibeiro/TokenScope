@@ -22,10 +22,12 @@ O TokenScope DD não é blockchain, corretora, carteira, custodiante, plataforma
 
 Cadastro estruturado de ativos e fontes, evidências preservadas, campos normalizados, validações, red flags, benchmark, Institutional Readiness Score, Analysis Confidence Score, Risk Passport, relatórios comparativos e Investment Committee Memo.
 
+A pergunta orientadora é quais ativos merecem avançar para due diligence mais profunda, quais exigem cautela e quais devem ser despriorizados ou monitorados. Qualquer orientação será apoio à revisão humana, nunca recomendação de investimento.
+
 ## Arquitetura e IA
 
 O projeto é local-first: processamento, dados, documentos, logs e outputs permanecem no ambiente local controlado. O núcleo funcionará sem IA. Uma integração futura, isolada, com a API da OpenAI poderá consultar, sintetizar e explicar resultados sustentados por evidências, sem calcular scores ou inventar fatos.
 
-## Estado atual
+## Memória e estado atual
 
-A etapa atual é exclusivamente a fundação técnica e documental da POC/MVP. Não há coleta, scoring, benchmark, banco de dados, interface ou integração de IA implementados.
+A fundação técnica e o ambiente Python local estão prontos. A etapa atual consolida memória estratégica privada e documentação pública segura. Uma primeira coleta exploratória histórica foi registrada, mas seus dados ainda exigem curadoria e não podem alimentar score. Não há pipeline integrado, scoring, benchmark, interface ou integração de IA implementados.

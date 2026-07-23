@@ -4,6 +4,8 @@
 
 Ser uma camada confiável de inteligência de decisão para avaliação institucional de ativos tokenizados, tornando informações heterogêneas auditáveis e comparáveis sem retirar do humano a decisão final.
 
+Em sua forma mais forte, o TokenScope DD pretende funcionar como uma lente de mercado: uma metodologia reconhecível para interpretar, comparar e priorizar RWAs com evidências.
+
 ## Proposta de valor
 
 O TokenScope DD conecta cada conclusão a dados e evidências, explicita incertezas e separa cálculo determinístico de explicação narrativa. Isso favorece análises repetíveis, defensáveis e úteis em processos institucionais.
@@ -26,3 +28,7 @@ O TokenScope DD conecta cada conclusão a dados e evidências, explicita incerte
 ## Evolução
 
 A POC validará taxonomia, dados e fluxo de evidências em um recorte pequeno. O MVP adicionará regras, comparações e outputs estruturados. Evoluções posteriores poderão incorporar consulta documental, narrativa assistida e interface local, sempre preservando rastreabilidade e controle humano.
+
+## Autoridade pública e valor privado
+
+O repositório público deve demonstrar qualidade técnica, princípios metodológicos e exemplos seguros. A memória estratégica completa, critérios detalhados e análises confidenciais permanecem privados. A hipótese de evolução comercial — de relatório e pilotos para serviço ou produto — ainda requer validação com usuários e não constitui decisão de monetização.

@@ -37,3 +37,11 @@ Todo o fluxo será executado localmente no Windows. Dados, documentos, evidênci
 - `ai/`: fronteira reservada para integração futura e opcional.
 
 O núcleo deve operar sem IA. A futura camada OpenAI somente explicará ou sintetizará fatos e resultados fornecidos pelo sistema; não será fonte de cálculos, evidências ou decisões.
+
+## Fronteira documental pública e privada
+
+A memória estratégica completa fica em `docs/knowledge_base/private_official/` e é ignorada pelo Git. `docs/knowledge_base/PRIVATE_INDEX.md` também é local. Somente a política da pasta e derivados públicos revisáveis podem ser versionados. O núcleo não depende do documento privado em runtime.
+
+## Determinismo e confiança
+
+Scores e red flags futuros serão produzidos por regras versionadas e evidências, não por LLM. A qualidade aparente do ativo deve permanecer separada da confiança da análise; dados ausentes ou inconsistentes reduzem confiança e exigem revisão explícita.

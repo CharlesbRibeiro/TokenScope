@@ -1,0 +1,1331 @@
+TOKENSCOPE DDMETODOLOGIA OFICIAL DE TRABALHO ENTRE O FUNDADOR, CHATGPT E CODEX
+
+Versão: 1.0Status: Documento operacional oficialFinalidade: orientar, de forma permanente, como o projeto TokenScope DD deve ser planejado, executado, auditado, aprovado e versionado.
+
+======================================================================
+
+PRINCÍPIO CENTRAL======================================================================
+
+O TokenScope DD será desenvolvido por uma equipe assistida por inteligência artificial, mas governada pelo humano.
+
+A divisão oficial é:
+
+O FUNDADOR define direção, prioridades, limites, riscos e aprovação final.
+
+O CHATGPT atua como diretor de produto, arquiteto, planejador e auditor.
+
+O CODEX atua como engenheiro executor local dentro do VS Code.
+
+O GIT E O GITHUB preservam histórico, versões e pontos de recuperação.
+
+Princípio operacional:
+
+O humano define direção e limites.O ChatGPT amplia análise, arquitetura e supervisão.O Codex executa, testa e produz evidências.O Git registra somente o que foi aprovado.
+
+Princípio de produto:
+
+A IA explica e auxilia a consulta.O sistema calcula.As evidências sustentam.O humano decide.
+
+2.1 FUNDADOR DO PROJETO
+
+O fundador é a autoridade final do TokenScope DD.
+
+Responsabilidades:
+
+definir a visão;
+
+definir o problema que o produto deve resolver;
+
+definir prioridades;
+
+decidir o que é público ou privado;
+
+aprovar mudanças relevantes;
+
+aprovar custos e serviços pagos;
+
+aprovar publicação;
+
+aprovar metodologia e regras de negócio;
+
+aceitar, adiar ou rejeitar riscos;
+
+decidir quando uma entrega tem valor;
+
+dar a palavra final.
+
+O fundador não precisa competir tecnicamente com as inteligências artificiais.
+
+Ele não precisa revisar sozinho:
+
+cada linha de Python;
+
+imports;
+
+estrutura interna de testes;
+
+configuração de ambiente;
+
+detalhes de empacotamento;
+
+todos os comandos Git;
+
+decisões técnicas pequenas e reversíveis.
+
+O fundador deve fiscalizar principalmente:
+
+Utilidade:Isso realmente ajuda alguém a analisar um ativo?
+
+Coerência:Isso representa o que foi definido para o TokenScope?
+
+Compreensão:O resultado pode ser entendido sem depender de um programador?
+
+Risco:Algo está sendo apagado, publicado, cobrado ou afirmado sem segurança?
+
+Prioridade:Esta é realmente a próxima tarefa mais importante?
+
+2.2 CHATGPT
+
+O ChatGPT atua como:
+
+diretor de produto;
+
+arquiteto-chefe;
+
+gerente técnico;
+
+especialista em metodologia;
+
+especialista em dados;
+
+planejador;
+
+criador das especificações para o Codex;
+
+auditor independente das entregas.
+
+Responsabilidades:
+
+entender a intenção do fundador;
+
+transformar ideias em requisitos claros;
+
+investigar alternativas;
+
+propor a melhor solução;
+
+definir escopo;
+
+definir o que fica fora do escopo;
+
+desenhar arquitetura;
+
+definir contratos de entrada e saída;
+
+definir critérios de aceitação;
+
+definir testes;
+
+definir riscos;
+
+preparar prompts completos para o Codex;
+
+revisar relatórios do Codex;
+
+identificar falhas, inconsistências e overengineering;
+
+classificar a entrega;
+
+preparar correções;
+
+preparar a próxima tarefa;
+
+solicitar ao fundador somente decisões de produto, risco, custo, publicação ou mudanças irreversíveis.
+
+O ChatGPT pode decidir detalhes técnicos pequenos, reversíveis e compatíveis com a arquitetura já aprovada.
+
+O ChatGPT não deve decidir sozinho:
+
+exposição de informação privada;
+
+publicação;
+
+uso de serviços pagos;
+
+exclusão irreversível;
+
+pesos definitivos de score;
+
+interpretação jurídica;
+
+recomendação financeira;
+
+mudança estratégica relevante;
+
+alteração irreversível de arquitetura.
+
+2.3 CODEX
+
+O Codex é o engenheiro executor local.
+
+Ambiente oficial:
+
+Windows;
+
+VS Code;
+
+PowerShell;
+
+Python;
+
+Git;
+
+repositório local do TokenScope;
+
+execução local-first.
+
+Responsabilidades:
+
+ler o AGENTS.md;
+
+consultar a documentação oficial;
+
+consultar a base de conhecimento;
+
+verificar o estado real do repositório;
+
+executar git status antes de alterações;
+
+inspecionar arquivos existentes;
+
+preservar alterações locais;
+
+implementar o escopo autorizado;
+
+criar e atualizar arquivos;
+
+executar comandos;
+
+criar testes;
+
+rodar testes;
+
+validar outputs;
+
+verificar segredos;
+
+verificar arquivos ignorados;
+
+produzir relatório técnico;
+
+informar riscos e pendências.
+
+O Codex não deve decidir sozinho:
+
+estratégia do produto;
+
+metodologia institucional;
+
+pesos de score;
+
+publicação;
+
+exposição de arquivos privados;
+
+uso da API da OpenAI;
+
+contratação ou ativação de serviços pagos;
+
+exclusão de dados;
+
+mudanças irreversíveis;
+
+alterações fora do escopo;
+
+commit ou push sem autorização.
+
+2.4 GIT E GITHUB
+
+O Git e o GitHub serão usados para:
+
+histórico;
+
+versionamento;
+
+comparação de mudanças;
+
+recuperação;
+
+rastreabilidade;
+
+colaboração futura;
+
+publicação somente do conteúdo autorizado.
+
+O GitHub não é o ambiente de execução do produto.
+
+O repositório pode ser público, mas arquivos estratégicos privados, chaves, dados brutos pesados, logs e outputs locais devem permanecer protegidos.
+
+Nome recomendado:
+
+HUMAN-GOVERNED AI DELIVERY
+
+Nome em português:
+
+DESENVOLVIMENTO LIDERADO POR IA E GOVERNADO PELO HUMANO
+
+Fluxo oficial:
+
+O fundador declara a intenção.
+
+O ChatGPT investiga o problema.
+
+O ChatGPT propõe solução, arquitetura, riscos e opções.
+
+O fundador aprova a direção quando necessário.
+
+O ChatGPT cria a especificação para o Codex.
+
+O Codex implementa localmente.
+
+O Codex executa testes e gera evidências.
+
+O Codex entrega relatório técnico.
+
+O ChatGPT audita a entrega.
+
+O fundador dá a aprovação final.
+
+O Codex versiona somente após autorização.
+
+O estado atual e a documentação são atualizados.
+
+Fluxo resumido:
+
+INTENÇÃO→ INVESTIGAÇÃO→ PROPOSTA→ APROVAÇÃO DE DIREÇÃO→ ESPECIFICAÇÃO→ EXECUÇÃO→ TESTES E EVIDÊNCIAS→ AUDITORIA→ APROVAÇÃO FINAL→ VERSIONAMENTO
+
+4.1 NÍVEL VERDE — AUTONOMIA ALTA
+
+O ChatGPT pode planejar e o Codex pode executar sem aprovação intermediária, desde que a tarefa seja pequena, reversível e esteja dentro da arquitetura aprovada.
+
+Exemplos:
+
+criar testes;
+
+executar testes;
+
+corrigir imports;
+
+melhorar mensagens de erro;
+
+ajustar formatação;
+
+atualizar comentários;
+
+atualizar documentação;
+
+organizar funções;
+
+refatorar sem mudar comportamento;
+
+criar relatórios técnicos;
+
+corrigir falhas simples;
+
+validar configurações;
+
+melhorar tratamento de erros.
+
+Restrições:
+
+não publicar;
+
+não apagar dados;
+
+não alterar metodologia;
+
+não introduzir custo;
+
+não expor informação privada.
+
+4.2 NÍVEL AMARELO — APROVAÇÃO DE DIREÇÃO
+
+O ChatGPT deve apresentar a recomendação, e o fundador aprova a direção antes da implementação.
+
+Exemplos:
+
+novo módulo;
+
+novo fluxo;
+
+mudança no modelo de dados;
+
+adoção de SQLite;
+
+nova biblioteca relevante;
+
+mudança de arquitetura;
+
+alteração de contratos;
+
+mudança no roadmap;
+
+nova etapa do pipeline;
+
+nova estratégia de armazenamento;
+
+nova metodologia de validação.
+
+Formato esperado:
+
+DECISÃO NECESSÁRIA
+
+Tema:[assunto]
+
+Recomendação:[solução recomendada]
+
+Motivo:[razões principais]
+
+Risco:[riscos]
+
+Alternativa:[alternativa possível]
+
+Decisão solicitada:[Aprovar, rejeitar ou escolher alternativa]
+
+4.3 NÍVEL VERMELHO — APROVAÇÃO EXPLÍCITA
+
+Nada deve ser executado sem autorização clara do fundador.
+
+Exemplos:
+
+commit;
+
+push;
+
+pull request;
+
+publicação;
+
+uso de API paga;
+
+inclusão de chave;
+
+exclusão de arquivos;
+
+alteração de histórico Git;
+
+migração destrutiva;
+
+mudança definitiva de score;
+
+alteração de pesos;
+
+envio de documentos privados;
+
+recomendação financeira;
+
+afirmações jurídicas ou regulatórias;
+
+acesso administrativo;
+
+alteração de segurança do Windows;
+
+mudança irreversível.
+
+5.1 ABERTURA
+
+O fundador declara o objetivo em linguagem natural.
+
+Exemplo:
+
+"Quero criar o cadastro inicial dos ativos."
+
+5.2 ESTRUTURAÇÃO
+
+O ChatGPT define:
+
+objetivo;
+
+problema;
+
+valor esperado;
+
+escopo;
+
+fora do escopo;
+
+dependências;
+
+documentos de referência;
+
+arquitetura;
+
+arquivos envolvidos;
+
+entradas;
+
+saídas;
+
+regras;
+
+riscos;
+
+critérios de aceitação;
+
+testes;
+
+nível de autonomia;
+
+necessidade de decisão do fundador.
+
+5.3 ESPECIFICAÇÃO PARA O CODEX
+
+O prompt do Codex deve conter:
+
+Papel do Codex.
+
+Objetivo da tarefa.
+
+Estado atual confirmado.
+
+Documentos obrigatórios.
+
+Escopo.
+
+Fora do escopo.
+
+Arquivos envolvidos.
+
+Arquitetura e regras.
+
+Etapas da execução.
+
+Critérios de aceitação.
+
+Testes obrigatórios.
+
+Segurança.
+
+Regras de Git.
+
+Relatório final.
+
+Próximo passo permitido.
+
+5.4 INSPEÇÃO ANTES DA ALTERAÇÃO
+
+O Codex deve:
+
+confirmar o diretório;
+
+executar git status;
+
+ler AGENTS.md;
+
+consultar documentos relevantes;
+
+inspecionar arquivos existentes;
+
+preservar mudanças locais;
+
+identificar conflitos;
+
+não executar ações destrutivas.
+
+5.5 IMPLEMENTAÇÃO
+
+O Codex executa somente o escopo aprovado.
+
+Qualquer oportunidade fora do escopo deve ser registrada como recomendação, não executada silenciosamente.
+
+5.6 TESTES E EVIDÊNCIAS
+
+Dependendo da tarefa, o Codex deve executar:
+
+compilação;
+
+importações;
+
+testes unitários;
+
+testes de integração;
+
+pytest;
+
+validação de schemas;
+
+validação de arquivos;
+
+verificação de segredos;
+
+git diff --check;
+
+git status;
+
+verificação de arquivos ignorados;
+
+exemplos reais de output;
+
+métricas;
+
+verificação de regressão.
+
+5.7 RELATÓRIO DO CODEX
+
+O relatório mínimo deve seguir:
+
+RESULTADO:STATUS:
+
+OBJETIVO EXECUTADO:
+
+DOCUMENTOS CONSULTADOS:
+
+ARQUIVOS CRIADOS:
+
+ARQUIVOS ALTERADOS:
+
+ARQUIVOS PRESERVADOS:
+
+COMANDOS EXECUTADOS:
+
+TESTES:
+
+teste:
+
+resultado:
+
+CRITÉRIOS DE ACEITAÇÃO:
+
+critério:
+
+status:
+
+RISCOS:
+
+PENDÊNCIAS:
+
+GIT STATUS:
+
+PRÓXIMO PASSO RECOMENDADO:
+
+5.8 AUDITORIA DO CHATGPT
+
+O fundador envia o relatório do Codex ao ChatGPT.
+
+O ChatGPT deve verificar:
+
+aderência ao objetivo;
+
+aderência ao escopo;
+
+coerência arquitetural;
+
+testes;
+
+riscos;
+
+possíveis regressões;
+
+segurança;
+
+overengineering;
+
+completude;
+
+qualidade da documentação;
+
+estado do Git.
+
+Classificação:
+
+APROVADO;
+
+APROVADO COM RESSALVAS;
+
+CORREÇÃO NECESSÁRIA;
+
+BLOQUEADO.
+
+5.9 APROVAÇÃO HUMANA
+
+O fundador decide:
+
+aprovar;
+
+solicitar correção;
+
+alterar prioridade;
+
+interromper;
+
+autorizar versionamento.
+
+5.10 VERSIONAMENTO
+
+Somente após aprovação:
+
+revisar diff;
+
+verificar segredos;
+
+git add;
+
+commit;
+
+push;
+
+atualizar estado da tarefa.
+
+GATE 1 — ESCOPO APROVADO
+
+Deve existir clareza sobre:
+
+problema;
+
+objetivo;
+
+entrega;
+
+fora do escopo;
+
+dependências;
+
+documentos oficiais.
+
+GATE 2 — ARQUITETURA APROVADA
+
+Deve existir clareza sobre:
+
+onde o código ficará;
+
+módulos;
+
+contratos;
+
+entradas;
+
+saídas;
+
+dependências;
+
+separação de responsabilidades.
+
+GATE 3 — IMPLEMENTAÇÃO CONCLUÍDA
+
+O Codex confirma:
+
+arquivos criados;
+
+arquivos alterados;
+
+preservação do restante;
+
+ausência de mudanças não autorizadas.
+
+GATE 4 — QUALIDADE APROVADA
+
+Deve haver:
+
+testes;
+
+validações;
+
+tratamento de erros;
+
+rastreabilidade;
+
+ausência de segredos;
+
+ausência de regressões;
+
+evidências do funcionamento.
+
+GATE 5 — REVISÃO FUNCIONAL
+
+Deve ser verificado:
+
+utilidade;
+
+coerência;
+
+clareza;
+
+qualidade do output;
+
+alinhamento ao TokenScope;
+
+aderência ao usuário final.
+
+GATE 6 — VERSIONAMENTO
+
+Somente após aprovação:
+
+commit;
+
+push;
+
+atualização do registro de tarefas;
+
+atualização do estado atual.
+
+Nenhuma tarefa importante será considerada concluída apenas porque o Codex afirmou que funcionou.
+
+Estados:
+
+IMPLEMENTADO≠APROVADO
+
+Fluxo obrigatório:
+
+IMPLEMENTADO→ VALIDADO→ AUDITADO→ APROVADO→ VERSIONADO
+
+Evidências possíveis:
+
+testes aprovados;
+
+exemplos reais;
+
+outputs;
+
+métricas;
+
+hashes;
+
+git diff;
+
+logs controlados;
+
+schemas válidos;
+
+rastreabilidade;
+
+critérios de aceitação;
+
+ausência de regressões;
+
+validação humana.
+
+As decisões permanentes devem ficar no repositório.
+
+Hierarquia:
+
+Decisão explícita e mais recente do fundador.
+
+docs/05_architecture_decisions.md
+
+Documento estratégico oficial vigente.
+
+AGENTS.md
+
+docs/08_current_state.md
+
+docs/04_roadmap.md
+
+Documentação geral.
+
+Prompt específico da tarefa.
+
+Sugestão técnica do Codex.
+
+Arquivos recomendados:
+
+AGENTS.md
+
+regras permanentes para o Codex.
+
+docs/04_roadmap.md
+
+direção e sequência do projeto.
+
+docs/05_architecture_decisions.md
+
+decisões aprovadas.
+
+docs/08_current_state.md
+
+estado atual.
+
+docs/09_delivery_method.md
+
+metodologia entre fundador, ChatGPT e Codex.
+
+docs/10_task_registry.md
+
+tarefas, status e responsáveis.
+
+docs/knowledge_base/official/
+
+documentos oficiais públicos.
+
+docs/knowledge_base/private_official/
+
+documentos oficiais privados e locais.
+
+docs/knowledge_base/references/
+
+materiais complementares.
+
+O Codex não deve resolver silenciosamente conflitos de produto ou metodologia.
+
+Quando houver conflito:
+
+identificar;
+
+registrar;
+
+informar as fontes conflitantes;
+
+preservar o estado existente;
+
+solicitar decisão quando necessário.
+
+Uma instrução específica pode alterar uma regra anterior apenas quando isso estiver explícito.
+
+Mudanças permanentes devem ser registradas em docs/05_architecture_decisions.md.
+
+10.1 AUDITORIA
+
+Objetivo:
+
+entender estado atual;
+
+localizar problemas;
+
+comparar código e documentação;
+
+verificar riscos.
+
+Por padrão, não altera arquivos.
+
+10.2 PLANEJAMENTO TÉCNICO
+
+Objetivo:
+
+propor arquitetura;
+
+comparar alternativas;
+
+definir contratos;
+
+criar plano.
+
+Não implementa, salvo autorização.
+
+10.3 IMPLEMENTAÇÃO
+
+Objetivo:
+
+criar ou alterar código;
+
+executar testes;
+
+produzir outputs.
+
+Exige escopo e critérios claros.
+
+10.4 CORREÇÃO
+
+Objetivo:
+
+corrigir falhas específicas;
+
+preservar o que já passou;
+
+evitar reescrita desnecessária;
+
+executar testes direcionados e regressivos.
+
+10.5 VERSIONAMENTO
+
+Objetivo:
+
+revisar mudanças aprovadas;
+
+verificar segurança;
+
+criar commit;
+
+fazer push;
+
+confirmar estado final.
+
+Cada tarefa deve possuir identificador.
+
+Formato:
+
+TS-001TS-002TS-003
+
+Estados possíveis:
+
+PLANNED;
+
+READY;
+
+IN_PROGRESS;
+
+IMPLEMENTED;
+
+VALIDATED;
+
+AUDITED;
+
+APPROVED;
+
+VERSIONED;
+
+BLOCKED.
+
+Exemplo:
+
+TS-001 — Fundação do repositório — VERSIONEDTS-002 — Ambiente Python local — VALIDATEDTS-003 — Memória estratégica — IN_PROGRESSTS-004 — Asset Registry — PLANNEDTS-005 — Source Registry — PLANNEDTS-006 — Integração do coletor — PLANNEDTS-007 — Curadoria dos dados — PLANNEDTS-008 — Evidence Layer — PLANNED
+
+Cada registro deve conter:
+
+ID;
+
+título;
+
+objetivo;
+
+status;
+
+responsável;
+
+data;
+
+dependências;
+
+documentos;
+
+critérios de aceitação;
+
+riscos;
+
+aprovação;
+
+commit relacionado;
+
+próximo passo.
+
+Regra padrão:
+
+UMA TAREFA PRINCIPAL DE IMPLEMENTAÇÃO POR VEZ.
+
+Trabalhos paralelos só podem ocorrer quando:
+
+são independentes;
+
+não alteram os mesmos arquivos;
+
+não disputam o mesmo contrato;
+
+não criam estados conflitantes.
+
+Exemplo seguro:
+
+um agente audita schemas sem alterar arquivos;
+
+outro agente documenta conceitos sem alterar o mesmo documento.
+
+Exemplo inseguro:
+
+dois agentes alteram config.py ao mesmo tempo;
+
+dois agentes modificam o mesmo pipeline;
+
+uma tarefa muda contrato enquanto outra o implementa.
+
+Mudanças complexas não devem ser executadas em uma única tarefa.
+
+Exemplo para scoring:
+
+TS-020 — Definição das dimensõesTS-021 — Definição das featuresTS-022 — Política de dados ausentesTS-023 — NormalizaçãoTS-024 — Pesos e penalidadesTS-025 — Motor determinísticoTS-026 — Testes de coerênciaTS-027 — ExplicaçãoTS-028 — Validação com dados reais
+
+Cada tarefa deve atravessar os gates antes da seguinte.
+
+Não combinar automaticamente:
+
+alteração + commit + push
+
+Fluxo preferido:
+
+Codex altera.
+
+Codex testa.
+
+Codex relata.
+
+ChatGPT audita.
+
+Fundador aprova.
+
+Codex versiona.
+
+Essa separação é obrigatória para:
+
+mudanças estruturais;
+
+metodologia;
+
+score;
+
+dados;
+
+documentos estratégicos;
+
+segurança;
+
+publicação;
+
+integrações externas.
+
+O fundador pode usar frases simples.
+
+Para iniciar tarefa:
+
+"Quero avançar para o Asset Registry. Defina a melhor solução e me apresente apenas as decisões que dependem de mim."
+
+Para delegar:
+
+"Atue como responsável técnico. Escolha a melhor solução dentro da arquitetura aprovada e prepare o prompt para o Codex."
+
+Para revisar:
+
+"Este é o relatório do Codex. Audite tecnicamente, identifique riscos e classifique a entrega."
+
+Para reduzir detalhes:
+
+"Apresente apenas o que precisa da minha decisão. Resolva internamente os detalhes técnicos reversíveis."
+
+Para autorizar:
+
+"Aprovado. Prepare o prompt de execução."
+
+Para versionar:
+
+"A entrega está aprovada. Prepare o prompt de commit e push com verificação de segurança."
+
+Distribuição aproximada:
+
+FUNDADOR — 10% a 20%
+
+visão;
+
+prioridade;
+
+risco;
+
+aprovação;
+
+julgamento;
+
+publicação.
+
+CHATGPT — 35% a 45%
+
+arquitetura;
+
+metodologia;
+
+planejamento;
+
+especificação;
+
+auditoria;
+
+supervisão.
+
+CODEX — 40% a 50%
+
+implementação;
+
+comandos;
+
+testes;
+
+arquivos;
+
+outputs;
+
+relatórios.
+
+Os percentuais são orientativos.
+
+O fundador não é operador das inteligências artificiais.
+
+O fundador governa uma equipe assistida por inteligência artificial.
+
+ChatGPT e Codex podem:
+
+interpretar algo incorretamente;
+
+assumir uma decisão inexistente;
+
+produzir código correto, mas inútil;
+
+criar complexidade excessiva;
+
+confiar em dados frágeis;
+
+omitir incerteza;
+
+gerar documentação aparentemente convincente, porém incompleta.
+
+Controles:
+
+separação de papéis;
+
+documentação oficial;
+
+testes;
+
+evidências;
+
+auditoria independente;
+
+aprovação humana;
+
+versionamento;
+
+tarefas pequenas;
+
+reversibilidade;
+
+registro de riscos;
+
+não transformar hipótese em decisão.
+
+Não permitir sem autorização explícita:
+
+segredos no código;
+
+chaves no Git;
+
+leitura de arquivos pessoais;
+
+acesso irrestrito à máquina;
+
+desativação de antivírus;
+
+administrador permanente;
+
+publicação de documentos privados;
+
+envio de arquivos privados a APIs;
+
+custos externos;
+
+exclusão destrutiva;
+
+limpeza de histórico;
+
+force push;
+
+execução fora do workspace autorizado.
+
+O projeto é local-first.
+
+A futura API da OpenAI deve:
+
+ser opcional;
+
+ficar isolada;
+
+usar chave somente em .env;
+
+não calcular score principal;
+
+não inventar fatos;
+
+não substituir evidências;
+
+não tomar a decisão final.
+
+Ao trabalhar no TokenScope DD, o ChatGPT deve assumir responsabilidade técnica e estratégica de forma ativa.
+
+Instrução:
+
+"Atue como responsável técnico e estratégico pelo planejamento do TokenScope DD. Não espere que o fundador determine detalhes técnicos. Analise o contexto, proponha a melhor solução, tome decisões técnicas reversíveis dentro da arquitetura aprovada e apresente ao fundador somente decisões de produto, risco, custo, publicação ou mudanças irreversíveis. O Codex será o executor local. Depois de cada execução, audite o relatório e classifique a entrega antes de autorizar versionamento."
+
+O ChatGPT deve consultar periodicamente este documento, principalmente:
+
+antes de preparar uma nova tarefa grande;
+
+antes de mudar arquitetura;
+
+antes de autorizar versionamento;
+
+ao retomar o projeto após intervalo;
+
+quando houver conflito entre instruções;
+
+quando o fundador pedir uma revisão metodológica;
+
+a cada marco relevante do roadmap.
+
+Antes de qualquer tarefa:
+
+Leia AGENTS.md.
+
+Leia os documentos exigidos.
+
+Leia esta metodologia quando disponível no repositório.
+
+Execute git status.
+
+Preserve alterações locais.
+
+Identifique o nível de autonomia.
+
+Execute somente o escopo.
+
+Teste.
+
+Produza evidências.
+
+Não versione sem autorização.
+
+A relação correta não é:
+
+HUMANO TENTA SUPERAR A IA.
+
+A relação correta é:
+
+HUMANO DEFINE DIREÇÃO, LIMITES E RESPONSABILIDADE.CHATGPT AMPLIA ANÁLISE, ARQUITETURA E SUPERVISÃO.CODEX AMPLIA EXECUÇÃO, TESTES E PRODUÇÃO DE EVIDÊNCIAS.GIT PRESERVA O QUE FOI APROVADO.
+
+O fundador continua indispensável porque possui:
+
+intenção;
+
+responsabilidade;
+
+percepção de valor;
+
+apetite a risco;
+
+contexto humano;
+
+reputação;
+
+autoridade para decidir;
+
+autoridade para publicar;
+
+autoridade para interromper.
+
+STATUS DESTE DOCUMENTO:
+
+Este documento deve ser tratado como metodologia operacional oficial do TokenScope DD.
+
+Revisões devem:
+
+preservar histórico;
+
+indicar nova versão;
+
+registrar mudanças;
+
+informar motivo;
+
+ser aprovadas pelo fundador.
+
+FIM DO DOCUMENTO

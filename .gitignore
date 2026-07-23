@@ -248,3 +248,8 @@ outputs/reports/**
 !outputs/reports/.gitkeep
 outputs/risk_passports/**
 !outputs/risk_passports/.gitkeep
+
+# Private strategic memory (local only; keep only its public policy README)
+docs/knowledge_base/private_official/*
+!docs/knowledge_base/private_official/README.md
+docs/knowledge_base/PRIVATE_INDEX.md

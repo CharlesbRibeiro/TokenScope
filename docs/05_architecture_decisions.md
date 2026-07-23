@@ -20,3 +20,30 @@ Este registro reúne decisões vigentes. Novas decisões devem incluir data, con
 - Evidências e suas versões serão preservadas.
 - A memória oficial fica em `docs/knowledge_base/official/`.
 - Documentos substituídos ou antigos ficam em `docs/knowledge_base/archive/`.
+
+## 2026-07-21 — Memória estratégica, evidências e dados exploratórios
+
+- O repositório GitHub é público; a memória estratégica completa permanece local e privada.
+- `docs/knowledge_base/private_official/` e `docs/knowledge_base/PRIVATE_INDEX.md` são ignorados pelo Git, exceto o README público de política.
+- A documentação pública é derivada, resumida e revisável; não reproduz integralmente a memória privada.
+- A arquitetura permanece local-first, sem dependência de nuvem nesta fase.
+- OpenAI continua futura, opcional e isolada; o núcleo é independente de IA.
+- Scores serão calculados deterministicamente por regras e metodologia versionadas.
+- LLM poderá apoiar consulta, síntese e explicação, mas não criar fatos, evidências, scores ou decisões.
+- Evidência precede conclusão, e ausência de dado deve reduzir a confiança da análise em vez de ser tratada automaticamente como neutra.
+- A run `RWA_COLLECTION_20260709_020427` é registro histórico de uma coleta exploratória.
+- Os dados exploratórios exigem curadoria, deduplicação e validação antes de features, red flags definitivas, benchmark ou score.
+
+## 2026-07-22 — Human-Governed AI Delivery e sequência de tarefas
+
+- A metodologia Human-Governed AI Delivery, versão 1.0, é a metodologia operacional oficial.
+- O fundador é a autoridade final sobre direção, risco, metodologia, aprovação e publicação.
+- O ChatGPT planeja, estrutura especificações e audita entregas.
+- O Codex executa localmente, testa e produz evidências dentro do escopo autorizado.
+- Implementação e versionamento são etapas separadas; commit e push exigem autorização explícita.
+- Apenas uma tarefa principal de implementação deve permanecer ativa por vez, salvo trabalhos independentes sem conflito.
+- O contexto estratégico completo permanece privado e local; a metodologia operacional pode ser pública.
+- Documentos privados não podem ser enviados a APIs ou serviços externos sem autorização explícita.
+- Após a auditoria e aprovação de TS-003, a próxima etapa será TS-004 — Asset Registry.
+- Scoring, red flags, benchmark e OpenAI não serão implementados antes das etapas preparatórias correspondentes.
+- OpenAI permanece uma camada futura, opcional e isolada do núcleo determinístico.

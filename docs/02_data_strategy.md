@@ -16,3 +16,11 @@ A estratégia deverá preservar proveniência, temporalidade, unidade, método d
 - **Benchmark:** possibilita comparação coerente entre pares, períodos e dimensões normalizadas.
 
 Dados brutos, intermediários, processados e evidências devem permanecer separados. CSV, JSON, JSONL, TXT, Markdown e YAML são formatos iniciais preferenciais. SQLite poderá ser avaliado somente quando houver necessidade real.
+
+## Qualidade e confiança
+
+Ausência de informação não deve ser convertida automaticamente em valor neutro. Completude, qualidade da fonte, atualização, consistência e nível de inferência deverão influenciar uma camada de confiança separada da avaliação do ativo.
+
+## Estado dos dados exploratórios
+
+A primeira coleta exploratória registrada produziu candidatos de campos, evidências e red flags para dez ativos. Esses artefatos não estão consolidados nem validados, podem conter falsos positivos e exigem curadoria, deduplicação e seleção dos melhores valores antes de qualquer feature, benchmark ou score.
