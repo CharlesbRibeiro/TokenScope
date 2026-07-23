@@ -20,7 +20,7 @@ A memória estratégica completa foi depositada em `docs/knowledge_base/private_
 
 ## Camada local de conhecimento no Obsidian
 
-O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele organiza explicações didáticas, estado, tarefas, decisões, execuções, aprendizados e ideias de publicação. O repositório permanece como fonte oficial. A estrutura e a documentação da TS-003A foram validadas, auditadas e aprovadas; o versionamento está autorizado e ainda pendente.
+O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele organiza explicações didáticas, estado, tarefas, decisões, execuções, aprendizados e ideias de publicação. O repositório permanece como fonte oficial. A estrutura e a documentação da TS-003A foram validadas, auditadas, aprovadas e versionadas no commit `4e2a003`.
 
 ## Histórico da primeira coleta exploratória
 
@@ -72,7 +72,7 @@ A fundação técnica está concluída e a fase corrente consolida memória e es
 - `TS-001 — Fundação do repositório — VERSIONED` no commit `0131f78`.
 - `TS-002 — Ambiente Python local — VERSIONED` no commit `67e454d`.
 - `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` no commit `47784f8`.
-- `TS-003A — Integração do Obsidian e metodologia de conhecimento — APPROVED`.
+- `TS-003A — Integração do Obsidian e metodologia de conhecimento — VERSIONED` no commit `4e2a003`.
 - `TS-004 — Asset Registry — PLANNED`.
 - `TS-005 — Source Registry — PLANNED`.
 - `TS-006 — Integração do coletor — PLANNED`.
@@ -81,10 +81,10 @@ A fundação técnica está concluída e a fase corrente consolida memória e es
 
 O controle detalhado está em `docs/10_task_registry.md`.
 
-## Tarefa principal atual
+## Próxima tarefa
 
-A TS-003A está `APPROVED` e autorizada para commit e push. Nenhuma capacidade funcional do produto foi alterada.
+A próxima tarefa é o planejamento da TS-004 — Asset Registry. Ela permanece `PLANNED` e não foi iniciada. Nenhuma capacidade funcional do produto foi alterada durante a TS-003A.
 
 ## Próxima etapa recomendada
 
-Após auditoria, aprovação e eventual versionamento da TS-003A, a próxima etapa será o planejamento da TS-004 — Asset Registry. A integração segura do coletor e dos artefatos exploratórios ocorrerá somente depois dos registries de ativos e fontes. Curadoria, deduplicação, seleção de valores e Evidence Layer permanecem fases posteriores; nada disso está implementado agora.
+Iniciar o planejamento da TS-004 — Asset Registry, mantendo o Obsidian atualizado como camada de acompanhamento e aprendizado. A integração segura do coletor e dos artefatos exploratórios ocorrerá somente depois dos registries de ativos e fontes. Curadoria, deduplicação, seleção de valores e Evidence Layer permanecem fases posteriores; nada disso está implementado agora.
