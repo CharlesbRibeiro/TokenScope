@@ -1,0 +1,16 @@
+schema_version: "1.0.0"
+investigation_registry_version: "0.1.0"
+entities:
+  - observed_name: Centrifuge
+    possible_entity_type: PLATFORM_OR_PROTOCOL
+    investigation_status: PENDING
+    reason: >
+      O nome observado parece representar uma plataforma ou protocolo,
+      e não um ativo financeiro específico.
+
+  - observed_name: Maple
+    possible_entity_type: PLATFORM_OR_PROTOCOL
+    investigation_status: PENDING
+    reason: >
+      O nome observado parece representar uma plataforma ou protocolo,
+      e não um ativo financeiro específico.

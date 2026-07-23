@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+categories:
+  - category_id: tokenized_us_treasuries
+    display_name: Tokenized U.S. Treasuries
+    description: Valid category used by unit tests.
+    active: true
+  - category_id: unclassified
+    display_name: Unclassified
+    description: Temporary category used by unit tests.
+    active: true

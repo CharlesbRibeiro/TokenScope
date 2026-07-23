@@ -1,0 +1,21 @@
+schema_version: "1.0.0"
+categories:
+  - category_id: tokenized_us_treasuries
+    display_name: Tokenized U.S. Treasuries
+    description: Produtos tokenizados com exposição declarada a títulos do Tesouro dos Estados Unidos.
+    active: true
+
+  - category_id: tokenized_money_market_funds
+    display_name: Tokenized Money Market Funds
+    description: Fundos de mercado monetário representados ou operados por infraestrutura de tokens.
+    active: true
+
+  - category_id: tokenized_private_credit
+    display_name: Tokenized Private Credit
+    description: Produtos tokenizados ligados a estratégias ou direitos de crédito privado.
+    active: true
+
+  - category_id: unclassified
+    display_name: Unclassified
+    description: Classificação temporária para identidades ainda em investigação.
+    active: true

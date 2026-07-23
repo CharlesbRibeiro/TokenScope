@@ -1,0 +1,412 @@
+{
+  "$defs": {
+    "CoverageStatus": {
+      "description": "Progress of an asset through the future data preparation flow.",
+      "enum": [
+        "NOT_STARTED",
+        "SOURCES_PENDING",
+        "SOURCED",
+        "CURATED",
+        "EVIDENCED",
+        "ANALYSIS_READY"
+      ],
+      "title": "CoverageStatus",
+      "type": "string"
+    },
+    "DeploymentStatus": {
+      "description": "Operational state of a network deployment.",
+      "enum": [
+        "ACTIVE",
+        "INACTIVE",
+        "DEPRECATED",
+        "UNKNOWN"
+      ],
+      "title": "DeploymentStatus",
+      "type": "string"
+    },
+    "IdentityStatus": {
+      "description": "Confidence state for the identity of an official asset.",
+      "enum": [
+        "UNVERIFIED",
+        "PROVISIONAL",
+        "VERIFIED"
+      ],
+      "title": "IdentityStatus",
+      "type": "string"
+    },
+    "NetworkDeployment": {
+      "additionalProperties": false,
+      "description": "A basic, unverified deployment identity on a named network.",
+      "properties": {
+        "network_name": {
+          "minLength": 1,
+          "title": "Network Name",
+          "type": "string"
+        },
+        "chain_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chain Id"
+        },
+        "contract_address": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Contract Address"
+        },
+        "token_standard": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Token Standard"
+        },
+        "deployment_status": {
+          "$ref": "#/$defs/DeploymentStatus"
+        }
+      },
+      "required": [
+        "network_name",
+        "deployment_status"
+      ],
+      "title": "NetworkDeployment",
+      "type": "object"
+    },
+    "OfficialAsset": {
+      "additionalProperties": false,
+      "description": "Canonical identity and lifecycle state of an official asset record.",
+      "properties": {
+        "asset_id": {
+          "pattern": "^ts_asset_[0-9a-f]{12}$",
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "asset_key": {
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+          "title": "Asset Key",
+          "type": "string"
+        },
+        "official_name": {
+          "minLength": 1,
+          "title": "Official Name",
+          "type": "string"
+        },
+        "short_name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Short Name"
+        },
+        "symbol": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Symbol"
+        },
+        "aliases": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        },
+        "category_id": {
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+          "title": "Category Id",
+          "type": "string"
+        },
+        "subcategory_id": {
+          "anyOf": [
+            {
+              "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subcategory Id"
+        },
+        "product_type": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Product Type"
+        },
+        "underlying_asset_type": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Underlying Asset Type"
+        },
+        "issuer_name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Issuer Name"
+        },
+        "issuer_legal_name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Issuer Legal Name"
+        },
+        "issuer_reference": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Issuer Reference"
+        },
+        "jurisdictions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Jurisdictions",
+          "type": "array"
+        },
+        "official_website": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Official Website"
+        },
+        "launch_date": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Launch Date"
+        },
+        "currency": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Currency"
+        },
+        "network_deployments": {
+          "items": {
+            "$ref": "#/$defs/NetworkDeployment"
+          },
+          "title": "Network Deployments",
+          "type": "array"
+        },
+        "record_status": {
+          "$ref": "#/$defs/RecordStatus"
+        },
+        "identity_status": {
+          "$ref": "#/$defs/IdentityStatus"
+        },
+        "coverage_status": {
+          "$ref": "#/$defs/CoverageStatus"
+        },
+        "source_refs": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Source Refs",
+          "type": "array"
+        },
+        "identity_rationale": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Identity Rationale"
+        },
+        "schema_version": {
+          "minLength": 1,
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "updated_at": {
+          "format": "date-time",
+          "title": "Updated At",
+          "type": "string"
+        },
+        "last_verified_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Verified At"
+        },
+        "registry_notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registry Notes"
+        }
+      },
+      "required": [
+        "asset_id",
+        "asset_key",
+        "official_name",
+        "category_id",
+        "record_status",
+        "identity_status",
+        "coverage_status",
+        "schema_version",
+        "created_at",
+        "updated_at"
+      ],
+      "title": "OfficialAsset",
+      "type": "object"
+    },
+    "RecordStatus": {
+      "description": "Lifecycle state of an official registry record.",
+      "enum": [
+        "CANDIDATE",
+        "ACTIVE",
+        "INACTIVE",
+        "ARCHIVED",
+        "REJECTED"
+      ],
+      "title": "RecordStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Versioned official Asset Registry.",
+  "properties": {
+    "schema_version": {
+      "minLength": 1,
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "registry_version": {
+      "minLength": 1,
+      "title": "Registry Version",
+      "type": "string"
+    },
+    "assets": {
+      "items": {
+        "$ref": "#/$defs/OfficialAsset"
+      },
+      "title": "Assets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_version",
+    "assets"
+  ],
+  "title": "AssetRegistry",
+  "type": "object"
+}

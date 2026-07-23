@@ -1,0 +1,82 @@
+schema_version: "1.0.0"
+candidate_registry_version: "0.1.0"
+candidates:
+  - candidate_id: ts_candidate_b2f03f4cd50b
+    observed_name: BUIDL
+    observed_symbol: BUIDL
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_7fff77fdee20
+    observed_name: BENJI
+    observed_symbol: BENJI
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_131bce74a310
+    observed_name: OUSG
+    observed_symbol: OUSG
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_504ca3d8ca6c
+    observed_name: USDY
+    observed_symbol: USDY
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_6e829efc1893
+    observed_name: USYC
+    observed_symbol: USYC
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_31ce86da6a9f
+    observed_name: USTB
+    observed_symbol: USTB
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_311c86d7d560
+    observed_name: STBT
+    observed_symbol: STBT
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null
+
+  - candidate_id: ts_candidate_4e53fb36a0aa
+    observed_name: TBILL
+    observed_symbol: TBILL
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Observação histórica; identidade oficial ainda não verificada.
+    promoted_asset_id: null

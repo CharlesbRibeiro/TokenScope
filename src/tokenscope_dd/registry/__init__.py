@@ -1,0 +1,81 @@
+"""Public Asset Registry API."""
+
+from tokenscope_dd.registry.fingerprint import (
+    calculate_context_fingerprint,
+    calculate_registry_fingerprint,
+    canonical_registry_json,
+    generate_candidate_id,
+    normalize_identity_text,
+)
+from tokenscope_dd.registry.loader import (
+    RegistryLoadError,
+    load_asset_candidates,
+    load_asset_registry,
+    load_asset_taxonomy,
+    load_complete_registry_context,
+    load_entity_investigation,
+)
+from tokenscope_dd.registry.models import (
+    AssetCandidate,
+    AssetRegistry,
+    AssetTaxonomy,
+    CandidateRegistry,
+    CandidateStatus,
+    CompleteRegistryContext,
+    CoverageStatus,
+    DeploymentStatus,
+    EntityInvestigationRegistry,
+    IdentityStatus,
+    InvestigationStatus,
+    NetworkDeployment,
+    OfficialAsset,
+    PossibleEntityType,
+    RecordStatus,
+)
+from tokenscope_dd.registry.promotion import (
+    PromotionResult,
+    RegistryPromotionError,
+    promote_candidate,
+)
+from tokenscope_dd.registry.validation import (
+    RegistryValidationResult,
+    ValidationStatus,
+    validate_complete_registry,
+    write_asset_registry_schema,
+)
+
+__all__ = [
+    "AssetCandidate",
+    "AssetRegistry",
+    "AssetTaxonomy",
+    "CandidateRegistry",
+    "CandidateStatus",
+    "CompleteRegistryContext",
+    "CoverageStatus",
+    "DeploymentStatus",
+    "EntityInvestigationRegistry",
+    "IdentityStatus",
+    "InvestigationStatus",
+    "NetworkDeployment",
+    "OfficialAsset",
+    "PossibleEntityType",
+    "PromotionResult",
+    "RecordStatus",
+    "RegistryLoadError",
+    "RegistryPromotionError",
+    "RegistryValidationResult",
+    "ValidationStatus",
+    "calculate_context_fingerprint",
+    "calculate_registry_fingerprint",
+    "canonical_registry_json",
+    "generate_candidate_id",
+    "load_asset_candidates",
+    "load_asset_registry",
+    "load_asset_taxonomy",
+    "load_complete_registry_context",
+    "load_entity_investigation",
+    "normalize_identity_text",
+    "promote_candidate",
+    "validate_complete_registry",
+    "write_asset_registry_schema",
+]

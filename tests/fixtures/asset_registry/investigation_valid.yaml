@@ -1,0 +1,7 @@
+schema_version: "1.0.0"
+investigation_registry_version: "0.1.0"
+entities:
+  - observed_name: Centrifuge
+    possible_entity_type: PLATFORM_OR_PROTOCOL
+    investigation_status: PENDING
+    reason: The observed name requires entity-type investigation.

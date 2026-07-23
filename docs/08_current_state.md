@@ -1,90 +1,55 @@
 # Estado Atual do Projeto
 
-## Fundação concluída
+## Fundação e ambiente
 
-O repositório oficial está organizado em `C:\Users\Usuario\Documents\RAW\TokenScope`, com governança em `AGENTS.md`, documentação principal, base de conhecimento, estrutura modular em `src/`, testes e políticas de segurança no `.gitignore`.
+O repositório oficial está em `C:\Users\Usuario\Documents\RAW\TokenScope`. A fundação técnica, o ambiente Python local, a memória estratégica e a integração com o Obsidian estão versionados.
 
-## Ambiente Python
+O ambiente oficial usa Windows, VS Code e Python 3.13.14 em `.venv`. O pacote está instalado em modo editável e os testes usam pytest. A arquitetura permanece local-first: dados, evidências, logs e outputs ficam locais; GitHub serve ao versionamento, não à execução. OpenAI permanece futura, opcional e isolada.
 
-O ambiente local `.venv` usa Python 3.13.14. O pacote `tokenscope-dd` está instalado em modo editável, o VS Code possui configuração local de interpretador e pytest, e a suíte atual registra um teste aprovado. A `.venv`, caches e artefatos de build permanecem ignorados.
+## Asset Registry
 
-O ambiente oficial é Windows, VS Code e Python local. A execução é local-first, sem serviços de nuvem. OpenAI permanece futura e opcional. Pytest está disponível na `.venv`.
+A TS-004 implementou e validou localmente a primeira versão do Asset Registry:
 
-## Arquitetura local-first
+- taxonomia inicial versionada;
+- 8 observações históricas preservadas como candidatos `DISCOVERED`;
+- Registry oficial válido e intencionalmente vazio;
+- Centrifuge e Maple separados como entidades `PLATFORM_OR_PROTOCOL` em investigação;
+- modelos Pydantic, loader YAML, validação cruzada, fingerprint SHA-256 e promoção atômica;
+- JSON Schema gerado do modelo;
+- script de validação, fixtures e testes unitários.
 
-Execução, armazenamento, dados, evidências, logs e outputs permanecem locais. GitHub é usado para versionamento e colaboração, não para execução. O núcleo não depende de nuvem nem de IA. OpenAI continua como integração futura, opcional e isolada.
+O resultado oficial da validação foi `PASSED`, sem erros ou avisos, com fingerprint `2b7004f0074402186966378373732a015ce59fe47680038ef4fc245885dcc61a`.
 
-## Base de conhecimento privada
+Os oito candidatos são BUIDL, BENJI, OUSG, USDY, USYC, USTB, STBT e TBILL. Eles não são ativos confirmados. Nenhum candidato foi promovido e nenhum dado externo foi consultado.
 
-A memória estratégica completa foi depositada em `docs/knowledge_base/private_official/`, protegida do Git e acompanhada por índice privado também ignorado. Documentos públicos derivados apresentam somente sínteses seguras. O TXT original não deve ser modificado, publicado ou enviado a serviços externos sem autorização explícita.
+A implementação e a validação foram concluídas, a auditoria foi aprovada pelo ChatGPT e o fundador concedeu aprovação final. A TS-004 está `APPROVED`, com versionamento ainda pendente.
 
-## Camada local de conhecimento no Obsidian
+## Limites atuais
 
-O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele organiza explicações didáticas, estado, tarefas, decisões, execuções, aprendizados e ideias de publicação. O repositório permanece como fonte oficial. A estrutura e a documentação da TS-003A foram validadas, auditadas, aprovadas e versionadas no commit `4e2a003`.
+O Asset Registry organiza identidade, classificação e estado. Ele não avalia ativos. Não existem ainda Source Registry, coletor modular integrado, curadoria oficial, Evidence Layer operacional, scoring, red flags definitivas, benchmark, Risk Passport, Control Tower, integração OpenAI ou interface.
 
-## Histórico da primeira coleta exploratória
+Nenhum ativo oficial está registrado ou pronto para análise. Uma futura marcação `ANALYSIS_READY` ainda dependerá de Evidence Layer antes de qualquer score oficial.
 
-O histórico registra a run `RWA_COLLECTION_20260709_020427`, originalmente localizada em:
+A coleta exploratória `RWA_COLLECTION_20260709_020427` permanece apenas como referência histórica. Seus dados são candidatos não consolidados e não devem alimentar conclusões institucionais.
 
-`C:\Users\charl\RAW\tokenscope_dd_data_collection\outputs\RWA_COLLECTION_20260709_020427`
+## Base privada e Obsidian
 
-Esse caminho pertence ao ambiente antigo e é apenas referência histórica, não caminho operacional vigente.
+A memória estratégica completa permanece em `docs/knowledge_base/private_official/`, protegida do Git. Nenhum conteúdo privado foi copiado para a implementação pública.
 
-Resultados registrados:
+O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele explica e acompanha a fonte oficial sem substituí-la. Sync e publicação permanecem desativados.
 
-- 38 fontes configuradas;
-- 37 fontes acessadas com sucesso;
-- 1 fonte com falha;
-- 10 ativos mapeados;
-- 108 campos candidatos extraídos;
-- 684 trechos de evidência;
-- 136 links de documentos descobertos;
-- 5 red flags iniciais.
+## Registro de tarefas
 
-Ativos iniciais: BUIDL, BENJI, OUSG, USDY, USYC, USTB, STBT, TBILL, CENTRIFUGE e MAPLE.
-
-Artefatos registrados:
-
-- `asset_master_seed.csv`;
-- `source_fetch_log.csv`;
-- `extracted_field_candidates.csv`;
-- `keyword_evidence_snippets.csv`;
-- `discovered_document_links.csv`;
-- `seed_red_flags.csv`;
-- `run_summary.json`.
-
-## Limitações atuais
-
-Os dados da primeira run são exploratórios, candidatos, não consolidados e não validados como base final. Podem conter falsos positivos de regex e exigem curadoria. Não devem alimentar score, benchmark ou conclusões institucionais nesta fase.
-
-Não existem ainda Asset Registry, Source Registry, pipeline integrado, Evidence Layer operacional, metodologia aprovada, score, benchmark, red flags definitivas, Risk Passport, memo, integração OpenAI ou interface.
-
-## Capacidades planejadas e não implementadas
-
-Continuam apenas planejados: Asset Registry, Source Registry, coletor modular, Evidence Layer operacional, Institutional Readiness Score, Analysis Confidence Score, Red Flag Engine, Benchmark, OpenAI, interface e Control Tower. Nenhuma dessas capacidades deve ser tratada como disponível no estado atual.
-
-## Etapa atual
-
-A fundação técnica está concluída e a fase corrente consolida memória e estratégia. O repositório passa a distinguir documentação pública segura de memória estratégica privada local.
-
-## Tarefas
-
-- `TS-001 — Fundação do repositório — VERSIONED` no commit `0131f78`.
-- `TS-002 — Ambiente Python local — VERSIONED` no commit `67e454d`.
-- `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` no commit `47784f8`.
-- `TS-003A — Integração do Obsidian e metodologia de conhecimento — VERSIONED` no commit `4e2a003`.
-- `TS-004 — Asset Registry — PLANNED`.
+- `TS-001 — Fundação do repositório — VERSIONED` (`0131f78`).
+- `TS-002 — Ambiente Python local — VERSIONED` (`67e454d`).
+- `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` (`47784f8`).
+- `TS-003A — Integração do Obsidian — VERSIONED` (`4e2a003`).
+- `TS-004 — Asset Registry — APPROVED`.
 - `TS-005 — Source Registry — PLANNED`.
 - `TS-006 — Integração do coletor — PLANNED`.
 - `TS-007 — Curadoria dos dados — PLANNED`.
 - `TS-008 — Evidence Layer — PLANNED`.
 
-O controle detalhado está em `docs/10_task_registry.md`.
+## Próximo passo
 
-## Próxima tarefa
-
-A próxima tarefa é o planejamento da TS-004 — Asset Registry. Ela permanece `PLANNED` e não foi iniciada. Nenhuma capacidade funcional do produto foi alterada durante a TS-003A.
-
-## Próxima etapa recomendada
-
-Iniciar o planejamento da TS-004 — Asset Registry, mantendo o Obsidian atualizado como camada de acompanhamento e aprendizado. A integração segura do coletor e dos artefatos exploratórios ocorrerá somente depois dos registries de ativos e fontes. Curadoria, deduplicação, seleção de valores e Evidence Layer permanecem fases posteriores; nada disso está implementado agora.
+Versionar com segurança a TS-004 em `main`, conforme autorização explícita do fundador. A tarefa ainda não está `VERSIONED`.

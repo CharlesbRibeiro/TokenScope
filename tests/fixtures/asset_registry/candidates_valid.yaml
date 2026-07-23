@@ -1,0 +1,12 @@
+schema_version: "1.0.0"
+candidate_registry_version: "0.1.0"
+candidates:
+  - candidate_id: ts_candidate_b2f03f4cd50b
+    observed_name: BUIDL
+    observed_symbol: BUIDL
+    discovered_in: RWA_COLLECTION_20260709_020427
+    discovered_at: 2026-07-09
+    possible_entity_type: ASSET
+    candidate_status: DISCOVERED
+    notes: Historical test observation.
+    promoted_asset_id: null
