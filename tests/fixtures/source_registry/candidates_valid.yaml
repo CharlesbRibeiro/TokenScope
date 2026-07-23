@@ -1,0 +1,15 @@
+schema_version: "1.0.0"
+candidate_registry_version: "0.1.0"
+candidates:
+  - candidate_id: ts_source_candidate_096f8d408ac9
+    observed_name: RWA.xyz
+    observed_url: https://app.rwa.xyz
+    observed_provider: RWA.xyz
+    discovered_in: configs/sources.example.yaml
+    discovered_at: 2026-07-21
+    possible_source_type: DATA_PROVIDER
+    candidate_status: DISCOVERED
+    related_asset_candidate_ids: []
+    notes: Observação estática local para teste.
+    promoted_source_id: null
+    duplicate_of_candidate_id: null

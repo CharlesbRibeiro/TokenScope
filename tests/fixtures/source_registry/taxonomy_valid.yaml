@@ -1,0 +1,12 @@
+schema_version: "1.0.0"
+source_types: [DATA_PROVIDER, UNKNOWN]
+authority_levels: [PRIMARY, SECONDARY, UNASSESSED]
+officiality_statuses: [OFFICIAL, INDEPENDENT, AGGREGATOR, UNKNOWN]
+information_domains: [IDENTITY, PERFORMANCE, OTHER]
+access_methods: [HTTP_HTML, HTTP_JSON, API, FILE, MANUAL, OTHER]
+descriptions:
+  source_types: Tipos usados pela fixture.
+  authority_levels: Autoridade usada pela fixture.
+  officiality_statuses: Oficialidade usada pela fixture.
+  information_domains: Domínios usados pela fixture.
+  access_methods: Métodos usados pela fixture.

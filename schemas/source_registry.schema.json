@@ -1,0 +1,481 @@
+{
+  "$defs": {
+    "AccessMethod": {
+      "enum": [
+        "HTTP_HTML",
+        "HTTP_PDF",
+        "HTTP_JSON",
+        "API",
+        "FILE",
+        "MANUAL",
+        "BLOCKCHAIN_EXPLORER",
+        "OTHER"
+      ],
+      "title": "AccessMethod",
+      "type": "string"
+    },
+    "AccessStatus": {
+      "enum": [
+        "UNKNOWN",
+        "ACCESSIBLE",
+        "RESTRICTED",
+        "UNAVAILABLE",
+        "DEPRECATED"
+      ],
+      "title": "AccessStatus",
+      "type": "string"
+    },
+    "AuthorityLevel": {
+      "enum": [
+        "PRIMARY",
+        "SECONDARY",
+        "TERTIARY",
+        "UNASSESSED"
+      ],
+      "title": "AuthorityLevel",
+      "type": "string"
+    },
+    "CollectionReadiness": {
+      "enum": [
+        "NOT_READY",
+        "READY",
+        "BLOCKED",
+        "RETIRED"
+      ],
+      "title": "CollectionReadiness",
+      "type": "string"
+    },
+    "ContentType": {
+      "enum": [
+        "HTML",
+        "PDF",
+        "JSON",
+        "CSV",
+        "XML",
+        "TEXT",
+        "OTHER",
+        "UNKNOWN"
+      ],
+      "title": "ContentType",
+      "type": "string"
+    },
+    "EndpointRole": {
+      "enum": [
+        "LANDING_PAGE",
+        "PRODUCT_PAGE",
+        "DOCUMENT",
+        "DOWNLOAD",
+        "API",
+        "DATA_PAGE",
+        "EXPLORER",
+        "OTHER"
+      ],
+      "title": "EndpointRole",
+      "type": "string"
+    },
+    "EndpointStatus": {
+      "enum": [
+        "ACTIVE",
+        "INACTIVE",
+        "DEPRECATED",
+        "UNKNOWN"
+      ],
+      "title": "EndpointStatus",
+      "type": "string"
+    },
+    "InformationDomain": {
+      "enum": [
+        "IDENTITY",
+        "LEGAL",
+        "REGULATORY",
+        "STRUCTURE",
+        "ISSUER",
+        "FEES",
+        "LIQUIDITY",
+        "HOLDERS",
+        "TRANSACTIONS",
+        "HOLDINGS",
+        "RESERVES",
+        "ATTESTATION",
+        "PERFORMANCE",
+        "OPERATIONS",
+        "TECHNICAL",
+        "NETWORK",
+        "OTHER"
+      ],
+      "title": "InformationDomain",
+      "type": "string"
+    },
+    "OfficialSource": {
+      "additionalProperties": false,
+      "description": "Canonical identity and governance state of an official source.",
+      "properties": {
+        "source_id": {
+          "pattern": "^ts_source_[0-9a-f]{12}$",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "source_key": {
+          "pattern": "^[a-z0-9]+(?:_[a-z0-9]+)*$",
+          "title": "Source Key",
+          "type": "string"
+        },
+        "display_name": {
+          "minLength": 1,
+          "title": "Display Name",
+          "type": "string"
+        },
+        "provider_name": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Name"
+        },
+        "provider_domain": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Domain"
+        },
+        "source_type": {
+          "$ref": "#/$defs/SourceType"
+        },
+        "authority_level": {
+          "$ref": "#/$defs/AuthorityLevel"
+        },
+        "officiality_status": {
+          "$ref": "#/$defs/OfficialityStatus"
+        },
+        "information_domains": {
+          "items": {
+            "$ref": "#/$defs/InformationDomain"
+          },
+          "title": "Information Domains",
+          "type": "array"
+        },
+        "related_asset_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Related Asset Ids",
+          "type": "array"
+        },
+        "endpoints": {
+          "items": {
+            "$ref": "#/$defs/SourceEndpoint"
+          },
+          "title": "Endpoints",
+          "type": "array"
+        },
+        "access_status": {
+          "$ref": "#/$defs/AccessStatus"
+        },
+        "collection_readiness": {
+          "$ref": "#/$defs/CollectionReadiness"
+        },
+        "record_status": {
+          "$ref": "#/$defs/RecordStatus"
+        },
+        "verification_status": {
+          "$ref": "#/$defs/VerificationStatus"
+        },
+        "verification_rationale": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verification Rationale"
+        },
+        "verification_refs": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Verification Refs",
+          "type": "array"
+        },
+        "usage_restrictions": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Usage Restrictions"
+        },
+        "terms_notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Terms Notes"
+        },
+        "expected_update_frequency": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Update Frequency"
+        },
+        "expected_refresh_days": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Refresh Days"
+        },
+        "schema_version": {
+          "minLength": 1,
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "updated_at": {
+          "format": "date-time",
+          "title": "Updated At",
+          "type": "string"
+        },
+        "last_verified_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Last Verified At"
+        },
+        "registry_notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registry Notes"
+        }
+      },
+      "required": [
+        "source_id",
+        "source_key",
+        "display_name",
+        "source_type",
+        "authority_level",
+        "officiality_status",
+        "access_status",
+        "collection_readiness",
+        "record_status",
+        "verification_status",
+        "schema_version",
+        "created_at",
+        "updated_at"
+      ],
+      "title": "OfficialSource",
+      "type": "object"
+    },
+    "OfficialityStatus": {
+      "enum": [
+        "OFFICIAL",
+        "INDEPENDENT",
+        "AGGREGATOR",
+        "COMMUNITY",
+        "UNKNOWN"
+      ],
+      "title": "OfficialityStatus",
+      "type": "string"
+    },
+    "RecordStatus": {
+      "enum": [
+        "ACTIVE",
+        "INACTIVE",
+        "ARCHIVED",
+        "REJECTED"
+      ],
+      "title": "RecordStatus",
+      "type": "string"
+    },
+    "SourceEndpoint": {
+      "additionalProperties": false,
+      "description": "A concrete address used to access information from a source.",
+      "properties": {
+        "endpoint_id": {
+          "pattern": "^ts_endpoint_[0-9a-f]{12}$",
+          "title": "Endpoint Id",
+          "type": "string"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        },
+        "locator": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Locator"
+        },
+        "endpoint_role": {
+          "$ref": "#/$defs/EndpointRole"
+        },
+        "access_method": {
+          "$ref": "#/$defs/AccessMethod"
+        },
+        "content_type": {
+          "$ref": "#/$defs/ContentType"
+        },
+        "endpoint_status": {
+          "$ref": "#/$defs/EndpointStatus"
+        },
+        "requires_auth": {
+          "title": "Requires Auth",
+          "type": "boolean"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "endpoint_id",
+        "endpoint_role",
+        "access_method",
+        "content_type",
+        "endpoint_status",
+        "requires_auth"
+      ],
+      "title": "SourceEndpoint",
+      "type": "object"
+    },
+    "SourceType": {
+      "enum": [
+        "OFFICIAL_PRODUCT_PAGE",
+        "OFFICIAL_DOCUMENT",
+        "REGULATOR",
+        "AUDITOR_OR_ATTESTATION",
+        "BLOCKCHAIN_EXPLORER",
+        "TECHNICAL_DOCUMENTATION",
+        "DATA_PROVIDER",
+        "RESEARCH_REPORT",
+        "NEWS",
+        "OTHER",
+        "UNKNOWN"
+      ],
+      "title": "SourceType",
+      "type": "string"
+    },
+    "VerificationStatus": {
+      "enum": [
+        "UNVERIFIED",
+        "PROVISIONAL",
+        "VERIFIED"
+      ],
+      "title": "VerificationStatus",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "minLength": 1,
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "registry_version": {
+      "minLength": 1,
+      "title": "Registry Version",
+      "type": "string"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/OfficialSource"
+      },
+      "title": "Sources",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "registry_version",
+    "sources"
+  ],
+  "title": "SourceRegistry",
+  "type": "object"
+}

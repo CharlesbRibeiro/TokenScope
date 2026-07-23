@@ -1,0 +1,63 @@
+schema_version: "1.0.0"
+
+source_types:
+  - OFFICIAL_PRODUCT_PAGE
+  - OFFICIAL_DOCUMENT
+  - REGULATOR
+  - AUDITOR_OR_ATTESTATION
+  - BLOCKCHAIN_EXPLORER
+  - TECHNICAL_DOCUMENTATION
+  - DATA_PROVIDER
+  - RESEARCH_REPORT
+  - NEWS
+  - OTHER
+  - UNKNOWN
+
+authority_levels:
+  - PRIMARY
+  - SECONDARY
+  - TERTIARY
+  - UNASSESSED
+
+officiality_statuses:
+  - OFFICIAL
+  - INDEPENDENT
+  - AGGREGATOR
+  - COMMUNITY
+  - UNKNOWN
+
+information_domains:
+  - IDENTITY
+  - LEGAL
+  - REGULATORY
+  - STRUCTURE
+  - ISSUER
+  - FEES
+  - LIQUIDITY
+  - HOLDERS
+  - TRANSACTIONS
+  - HOLDINGS
+  - RESERVES
+  - ATTESTATION
+  - PERFORMANCE
+  - OPERATIONS
+  - TECHNICAL
+  - NETWORK
+  - OTHER
+
+access_methods:
+  - HTTP_HTML
+  - HTTP_PDF
+  - HTTP_JSON
+  - API
+  - FILE
+  - MANUAL
+  - BLOCKCHAIN_EXPLORER
+  - OTHER
+
+descriptions:
+  source_types: Classifica o papel informacional principal da fonte.
+  authority_levels: Indica a proximidade da fonte em relação à informação original.
+  officiality_statuses: Registra a relação declarada da fonte com o objeto publicado.
+  information_domains: Delimita quais assuntos a fonte poderá sustentar futuramente.
+  access_methods: Informa como um endpoint pode ser acessado, sem executar coleta.

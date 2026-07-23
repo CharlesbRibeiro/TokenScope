@@ -26,7 +26,27 @@ A implementação, a validação e a auditoria foram concluídas, o fundador con
 
 ## Limites atuais
 
-O Asset Registry organiza identidade, classificação e estado. Ele não avalia ativos. Não existem ainda Source Registry, coletor modular integrado, curadoria oficial, Evidence Layer operacional, scoring, red flags definitivas, benchmark, Risk Passport, Control Tower, integração OpenAI ou interface.
+O Asset Registry organiza identidade, classificação e estado. Ele não avalia ativos.
+
+## Source Registry
+
+A TS-005 implementou e validou localmente a primeira versão do Source Registry:
+
+- taxonomia de tipos, autoridade, oficialidade, domínios e métodos de acesso;
+- separação entre candidatos, fontes oficiais, endpoints e itens de investigação;
+- 1 definição estática local preservada como candidato `DISCOVERED`;
+- Registry oficial válido e intencionalmente vazio;
+- modelos Pydantic, normalização segura de URLs, validação cruzada, fingerprint SHA-256 e promoção atômica;
+- integração de validação com candidatos e ativos oficiais da TS-004;
+- JSON Schema gerado do modelo, CLI, fixtures e testes.
+
+O resultado oficial foi `PASSED`, sem erros ou avisos, com fingerprint `12c5c090af1075f4f0ff001b272e27dba5a77f72d28fd044415c73639de1a607`.
+
+A única observação localizada foi `RWA.xyz`, já presente em `configs/sources.example.yaml`. Ela não foi acessada, verificada ou promovida, e não foi possível comprovar relação com a run histórica de 38 fontes.
+
+A implementação e a validação foram concluídas, a auditoria foi concluída e o fundador concedeu aprovação final. A TS-005 está `APPROVED`, com versionamento ainda pendente.
+
+Não existem ainda coletor modular integrado, curadoria oficial, Evidence Layer operacional, scoring, red flags definitivas, benchmark, Risk Passport, Control Tower, integração OpenAI ou interface.
 
 Nenhum ativo oficial está registrado ou pronto para análise. Uma futura marcação `ANALYSIS_READY` ainda dependerá de Evidence Layer antes de qualquer score oficial.
 
@@ -45,14 +65,14 @@ O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele explica
 - `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` (`47784f8`).
 - `TS-003A — Integração do Obsidian — VERSIONED` (`4e2a003`).
 - `TS-004 — Asset Registry — VERSIONED` (`5754168`).
-- `TS-005 — Source Registry — PLANNED`.
+- `TS-005 — Source Registry — APPROVED`.
 - `TS-006 — Integração do coletor — PLANNED`.
 - `TS-007 — Curadoria dos dados — PLANNED`.
 - `TS-008 — Evidence Layer — PLANNED`.
 
 ## Próximo passo
 
-Iniciar o planejamento e a especificação funcional da TS-005 — Source Registry.
+Versionar com segurança a TS-005 em `main`, conforme autorização explícita do fundador. A tarefa ainda não está `VERSIONED`.
 
 ## Metadados de versionamento da TS-004
 
