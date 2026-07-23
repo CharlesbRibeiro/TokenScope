@@ -22,7 +22,7 @@ O resultado oficial da validação foi `PASSED`, sem erros ou avisos, com finger
 
 Os oito candidatos são BUIDL, BENJI, OUSG, USDY, USYC, USTB, STBT e TBILL. Eles não são ativos confirmados. Nenhum candidato foi promovido e nenhum dado externo foi consultado.
 
-A implementação e a validação foram concluídas, a auditoria foi aprovada pelo ChatGPT e o fundador concedeu aprovação final. A TS-004 está `APPROVED`, com versionamento ainda pendente.
+A implementação, a validação e a auditoria foram concluídas, o fundador concedeu aprovação final e a TS-004 foi versionada no commit `57541680d1b752e1d72114f0b193f029bdf6f2c2`.
 
 ## Limites atuais
 
@@ -44,7 +44,7 @@ O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele explica
 - `TS-002 — Ambiente Python local — VERSIONED` (`67e454d`).
 - `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` (`47784f8`).
 - `TS-003A — Integração do Obsidian — VERSIONED` (`4e2a003`).
-- `TS-004 — Asset Registry — APPROVED`.
+- `TS-004 — Asset Registry — VERSIONED` (`5754168`).
 - `TS-005 — Source Registry — PLANNED`.
 - `TS-006 — Integração do coletor — PLANNED`.
 - `TS-007 — Curadoria dos dados — PLANNED`.
@@ -52,4 +52,16 @@ O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele explica
 
 ## Próximo passo
 
-Versionar com segurança a TS-004 em `main`, conforme autorização explícita do fundador. A tarefa ainda não está `VERSIONED`.
+Iniciar o planejamento e a especificação funcional da TS-005 — Source Registry.
+
+## Metadados de versionamento da TS-004
+
+- Commit: `57541680d1b752e1d72114f0b193f029bdf6f2c2`.
+- Mensagem: `feat: implement deterministic asset registry`.
+- Data: `2026-07-23`.
+- Branch: `main`.
+- Remoto: `origin`.
+- Validador: `PASSED`, com 0 erros e 0 avisos.
+- Testes: 40 dirigidos e 41 na suíte completa.
+- Fingerprint: `2b7004f0074402186966378373732a015ce59fe47680038ef4fc245885dcc61a`.
+- SHA-256 do schema: `09E67CC2DA00A5E5DFD34A4C09442A007148B413282B23C1229C3686FB288E6D`.
