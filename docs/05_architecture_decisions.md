@@ -47,3 +47,13 @@ Este registro reúne decisões vigentes. Novas decisões devem incluir data, con
 - Após a auditoria e aprovação de TS-003, a próxima etapa será TS-004 — Asset Registry.
 - Scoring, red flags, benchmark e OpenAI não serão implementados antes das etapas preparatórias correspondentes.
 - OpenAI permanece uma camada futura, opcional e isolada do núcleo determinístico.
+
+## 2026-07-22 — Obsidian como camada local de conhecimento
+
+- O Obsidian foi adotado como camada local de contexto, aprendizado e preparação de conteúdo.
+- O Vault oficial fica em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`, fora do repositório Git.
+- O repositório continua sendo a fonte oficial; notas do Vault explicam e acompanham, mas não substituem os documentos oficiais.
+- O Codex deve atualizar notas relacionadas depois de tarefas relevantes e registrar uma nota de execução.
+- O conhecimento acumulado poderá originar ideias de conteúdo, mas toda publicação exige aprovação explícita do fundador.
+- Nesta fase não haverá sincronização, conta conectada ou plugins externos no Vault.
+- Conteúdo privado permanece local, não é enviado a APIs e não é copiado para o repositório sem autorização.

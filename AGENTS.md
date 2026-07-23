@@ -99,6 +99,18 @@ Separe sempre dado bruto, dado intermediário, dado processado, evidência, hip�
 - Consulte a memória oficial antes de tarefas grandes e não envie documentos privados a APIs ou serviços externos.
 - Atualize o estado da tarefa e `docs/08_current_state.md` ao final, sem avançar status além das evidências disponíveis.
 
+## Obsidian e gestão do conhecimento
+
+- O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`.
+- O repositório continua sendo a fonte oficial; o Vault organiza, explica e acompanha essa verdade.
+- Em tarefas relevantes, consulte `00_HOME.md`, `02_ESTADO_DO_PROJETO/Estado_atual.md`, a nota da tarefa e as decisões relacionadas.
+- Ao final de cada trabalho relevante, crie uma nota de execução e atualize o estado, a tarefa e a página principal quando houver mudança real.
+- Escreva primeiro em linguagem simples. Para temas complexos, use: explicação simples, exemplo, aplicação no TokenScope e detalhe técnico somente quando necessário.
+- Não crie notas duplicadas, não invente estado e não transforme planejado em implementado, validado em aprovado ou ideia em publicação.
+- Registre aprendizados reais e ideias de publicação apenas quando forem úteis e sustentados pelo trabalho executado.
+- Não publique, não acesse o LinkedIn, não ative sincronização e não instale plugins externos sem autorização explícita.
+- Não envie notas privadas a APIs e não altere conteúdo em `98_PRIVADO/` sem autorização.
+
 ## Relatório final obrigatório
 
 Ao concluir uma tarefa, informe: resultado e status da tarefa; objetivo executado; arquivos criados; arquivos alterados; arquivos preservados; comandos executados; testes e evidências; critérios de aceitação; documentos consultados; riscos; pendências; estado do Git; próximo passo recomendado.
