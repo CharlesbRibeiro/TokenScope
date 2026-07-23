@@ -67,7 +67,7 @@ A fundação técnica está concluída e a fase corrente consolida memória e es
 
 - `TS-001 — Fundação do repositório — VERSIONED` no commit `0131f78`.
 - `TS-002 — Ambiente Python local — VERSIONED` no commit `67e454d`.
-- `TS-003 — Memória estratégica e metodologia oficial — APPROVED`; documentação, hashes, proteção e testes aprovados, aguardando commit e push.
+- `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` no commit `47784f8`.
 - `TS-004 — Asset Registry — PLANNED`.
 - `TS-005 — Source Registry — PLANNED`.
 - `TS-006 — Integração do coletor — PLANNED`.
@@ -76,11 +76,9 @@ A fundação técnica está concluída e a fase corrente consolida memória e es
 
 O controle detalhado está em `docs/10_task_registry.md`.
 
-## Pendências de governança
+## Próxima tarefa
 
-- commit e push dos arquivos públicos seguros da TS-003;
-- atualização do registro com o hash confirmado do commit documental;
-- preparação da TS-004 — Asset Registry.
+A próxima tarefa principal é a preparação da TS-004 — Asset Registry. Ela permanece apenas planejada e não foi iniciada.
 
 ## Próxima etapa recomendada
 
