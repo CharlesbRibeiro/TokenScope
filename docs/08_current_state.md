@@ -44,7 +44,7 @@ O resultado oficial foi `PASSED`, sem erros ou avisos, com fingerprint `12c5c090
 
 A única observação localizada foi `RWA.xyz`, já presente em `configs/sources.example.yaml`. Ela não foi acessada, verificada ou promovida, e não foi possível comprovar relação com a run histórica de 38 fontes.
 
-A implementação e a validação foram concluídas, a auditoria foi concluída e o fundador concedeu aprovação final. A TS-005 está `APPROVED`, com versionamento ainda pendente.
+A implementação, a validação e a auditoria foram concluídas, o fundador concedeu aprovação final e a TS-005 foi versionada no commit `763c8a8f40aa0ef838a3d633c6224d46fb98034a`.
 
 Não existem ainda coletor modular integrado, curadoria oficial, Evidence Layer operacional, scoring, red flags definitivas, benchmark, Risk Passport, Control Tower, integração OpenAI ou interface.
 
@@ -65,14 +65,27 @@ O Vault oficial está em `C:\Users\Usuario\Documents\RAW-OBISIDIAN`. Ele explica
 - `TS-003 — Memória estratégica e metodologia oficial — VERSIONED` (`47784f8`).
 - `TS-003A — Integração do Obsidian — VERSIONED` (`4e2a003`).
 - `TS-004 — Asset Registry — VERSIONED` (`5754168`).
-- `TS-005 — Source Registry — APPROVED`.
+- `TS-005 — Source Registry — VERSIONED` (`763c8a8`).
 - `TS-006 — Integração do coletor — PLANNED`.
 - `TS-007 — Curadoria dos dados — PLANNED`.
 - `TS-008 — Evidence Layer — PLANNED`.
 
 ## Próximo passo
 
-Versionar com segurança a TS-005 em `main`, conforme autorização explícita do fundador. A tarefa ainda não está `VERSIONED`.
+Iniciar o planejamento e a especificação funcional da TS-006 — Auditoria e integração modular do coletor.
+
+## Metadados de versionamento da TS-005
+
+- Commit: `763c8a8f40aa0ef838a3d633c6224d46fb98034a`.
+- Mensagem: `feat: implement deterministic source registry`.
+- Data: `2026-07-23`.
+- Branch: `main`.
+- Remoto: `origin`.
+- Validador: `PASSED`, com 0 erros, 0 avisos e 0 duplicidades.
+- Testes: 58 dirigidos e 99 na suíte completa.
+- Fingerprint do Registry vazio: `9bbb93f5f6235eed6cf2509275364c3ca25e65c75f35b9757a629387f4c1c878`.
+- Fingerprint do contexto: `12c5c090af1075f4f0ff001b272e27dba5a77f72d28fd044415c73639de1a607`.
+- SHA-256 do schema: `0913A7290352A5A1B4558A10E25126DB4BB33532BFC60184D26E8AC3194B8F2E`.
 
 ## Metadados de versionamento da TS-004
 

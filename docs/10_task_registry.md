@@ -9,7 +9,7 @@ Este registro acompanha o estado real das tarefas principais. Estados não avan�
 | TS-003 | Memória estratégica e metodologia oficial | Consolidar fontes oficiais, derivados públicos, governança e registro permanente de tarefas. | `VERSIONED` | Amarelo aprovado para execução documental; vermelho autorizado para versionamento | TS-001, TS-002 | Aprovada e publicada | `47784f8` | Preservar como baseline estratégico. |
 | TS-003A | Integração do Obsidian e metodologia de conhecimento | Organizar contexto e aprendizado em um Vault local, sem substituir o repositório. | `VERSIONED` | Amarelo aprovado; vermelho autorizado para versionamento | TS-003 | Aprovada e publicada | `4e2a003` | Preservar como baseline de conhecimento. |
 | TS-004 | Asset Registry | Implementar identidade, classificação e estado dos ativos, separando candidatos e entidades em investigação. | `VERSIONED` | Vermelho — versionamento explicitamente autorizado | TS-003A versionada | Aprovada e publicada | `5754168` | Preservar como baseline do Asset Registry. |
-| TS-005 | Source Registry | Definir e implementar o cadastro de fontes e sua governança. | `APPROVED` | Vermelho — versionamento explicitamente autorizado | TS-004 versionada | Auditoria concluída e aprovação do fundador concedida | — | Criar e enviar o primeiro commit da TS-005. |
+| TS-005 | Source Registry | Definir e implementar o cadastro de fontes e sua governança. | `VERSIONED` | Vermelho — versionamento explicitamente autorizado | TS-004 versionada | Aprovada e publicada | `763c8a8` | Preservar como baseline do Source Registry. |
 | TS-006 | Integração do coletor | Integrar com segurança o coletor exploratório ao repositório atual. | `PLANNED` | A definir | TS-004, TS-005 | Pendente | — | Inventariar coletor e artefatos após os registries. |
 | TS-007 | Curadoria dos dados | Deduplicar, validar e selecionar valores candidatos com rastreabilidade. | `PLANNED` | A definir | TS-006 | Pendente | — | Definir regras de curadoria e critérios de aceite. |
 | TS-008 | Evidence Layer | Estruturar evidências, confiança, hashes, fontes e referências documentais. | `PLANNED` | A definir | TS-007 | Pendente | — | Definir schema após a curadoria. |
@@ -47,7 +47,20 @@ A implementação, a validação e a auditoria foram concluídas, o fundador con
 - 58 testes dirigidos e 99 testes na suíte completa aprovados;
 - relatórios locais em `outputs/reports/`, ignorados pelo Git.
 
-A implementação, a validação e a auditoria foram concluídas, e o fundador concedeu aprovação final. O versionamento permanece pendente até a aceitação do commit e do push.
+A implementação, a validação e a auditoria foram concluídas, o fundador concedeu aprovação final e o primeiro commit foi aceito em `origin/main`.
+
+## Metadados de versionamento da TS-005
+
+- Primeiro commit: `763c8a8f40aa0ef838a3d633c6224d46fb98034a`.
+- Mensagem: `feat: implement deterministic source registry`.
+- Data do versionamento: `2026-07-23`.
+- Branch: `main`.
+- Remoto: `origin`.
+- Validador: `PASSED`, com 0 erros, 0 avisos e 0 duplicidades.
+- Testes: 58 dirigidos e 99 na suíte completa.
+- Fingerprint do Registry vazio: `9bbb93f5f6235eed6cf2509275364c3ca25e65c75f35b9757a629387f4c1c878`.
+- Fingerprint do contexto: `12c5c090af1075f4f0ff001b272e27dba5a77f72d28fd044415c73639de1a607`.
+- SHA-256 do JSON Schema: `0913A7290352A5A1B4558A10E25126DB4BB33532BFC60184D26E8AC3194B8F2E`.
 
 ## Regras de manutenção
 
